@@ -10,6 +10,9 @@ GMU ID: G01351350
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Student Feedback Survey Form</title>
+    <!-- JQuery -->
+    <script src="js/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <!-- Bootstrap CSS CDN -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" 
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -21,14 +24,36 @@ GMU ID: G01351350
   </head>
   <body>
     <!-- Header contains GMU logo and CS Department page and Home page links  -->
-    <header class="flex">
-      <h1>GMU</h1>
-      <nav class="nav-bar">
-        <a href="department.html">CS Department Info</a>
-        <a href="index.html">Home</a>
+    <header class="header">
+
+      <!-- Bootstrap Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-green nav">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="assets/media/images/CS-dept-logo.png" height="40px" alt="CS Department Logo">
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <!-- the loadPage function is called with the name of the page as an argument. The function will use
+               XMLHttpRequest to fetch the content of the page and set it as the innerHTML of the main section -->
+            <ul class="navbar-nav ml-auto flex">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="department.html">CS Department Info</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="survey-form.html">Student Survey Form</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </nav>
     </header>
-    <main class="container">
+    <main class="container main">
       <!-- Survey Form -->
       <form action="index.html" autocomplete="on" method="post">
         <h2 class="shadow-lg p-3 mb-4 rounded">Students Survey Form</h2>
@@ -272,7 +297,8 @@ GMU ID: G01351350
     </main>
     <!-- Footer -->
     <footer>
-      <small>&copy; Anand_Seshadri | G01351350 | 2023</small>
+      <small>&copy; Anand Seshadri | G01351350 | 2023</small>
     </footer>
+    <script src="./script.js"></script>
   </body>
 </html>

@@ -147,44 +147,73 @@ table {
     --tertiary: #ffcc33;
     --background: #82828184;
 }
-.header img{
-    height: 3rem;
-    filter: invert(100%);
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
+
 .container{
-    max-width: 1250px;
-    border: 2px solid var(--basic);
-    background-color: rgba(43, 136, 83, 0.2);
+  max-width: 1250px;
+  border: 2px solid var(--basic);
+  background-color: rgba(43, 136, 83, 0.2);
 }
+
 body {
   line-height: 2;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 16px;
   color: var(--secondary);
-  /* height: 100vh; */
+  height: 100%;
   background-color: var(--background);
 }
-.header {
+
+header {
   background-image: linear-gradient(to right, var(--primary), var(--tertiary));
   position: sticky;
   font-family: 'Times New Roman', Times, serif;
   top: 0;
-  z-index: 1;  
 }
+
+.navbar {
+  background-color: #006400;
+  background-image: linear-gradient(to right, rgb(3, 50, 3), rgb(47, 167, 47));
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 .nav-bar a {
-    text-decoration: none;
-    padding: 10px 20px;
-    font-size: 24px;
-    margin-right: 45px;
-    color: var(--basic);
-    border: solid 1px var(--basic);
-    border-radius: 10px;
+  text-decoration: none;
+  padding: 10px 20px;
+  font-size: 24px;
+  margin-right: 45px;
+  color: var(--basic);
+  border: solid 1px var(--basic);
+  border-radius: 10px;
 }
 .nav-bar a:hover {
-    text-decoration: none;
-    padding: 5px 20px;
-    color: var(--secondary);
+  text-decoration: none;
+  padding: 5px 20px;
+  color: var(--secondary);
 }
+
+.navbar-brand img{
+  padding: 5px;
+  object-fit: cover;
+  filter: invert(100%);
+}
+
+.navbar .container-fluid{
+  height: 53.6px;
+}
+
+.navbar-nav li {
+  margin: 0 10px;
+}
+
+/* Department Main Section */
 h1 {
   color: var(--primary);
   font-weight: 600;
@@ -209,14 +238,16 @@ h2,h3 {
 .table-bordered th, .table-bordered td {
     border: 1px solid var(--secondary)!important 
 }
-/* Footer */
-.footer {
-    height: 2rem;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-    background-image: linear-gradient(to right, var(--tertiary), var(--primary));
-    font-family: 'Times New Roman', Times, serif;
-    color: var(--basic);
-    text-align: center;
+
+
+/* Common footer */
+footer {
+  height: 2rem;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  background-image: linear-gradient(to right, var(--tertiary), var(--primary));
+  font-family: 'Times New Roman', Times, serif;
+  color: var(--basic);
+  text-align: center;
 }

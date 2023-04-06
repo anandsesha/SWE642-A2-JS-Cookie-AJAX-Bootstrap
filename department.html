@@ -21,7 +21,7 @@ GMU ID: G01351350
 </head>
 <body>
     <!-- Header contains CS Department logo and Page link -->
-    <header class="header p-4">
+    <!-- <header class="header p-4">
         <div class="container-fluid d-flex flex-row justify-content-between">
             <img src="assets/media/images/CS-dept-logo.png" alt="CS department logo">
             <nav class="nav-bar">
@@ -29,8 +29,38 @@ GMU ID: G01351350
                 <a href="./index.html">Home</a>
             </nav> 
         </div>
+    </header> -->
+
+    <header class="header">
+
+      <!-- Bootstrap Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-green nav">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="assets/media/images/CS-dept-logo.png" height="40px" alt="CS Department Logo">
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <!-- the loadPage function is called with the name of the page as an argument. The function will use
+               XMLHttpRequest to fetch the content of the page and set it as the innerHTML of the main section -->
+            <ul class="navbar-nav ml-auto flex">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="department.html">CS Department Info</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="survey-form.html">Student Survey Form</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
-    <main>
+    <main class="main">
         <!-- Section 1 : Department Info with couple of paragraphs-->
         <section class="pb-4">
             <div class="container p-4">
@@ -168,8 +198,8 @@ GMU ID: G01351350
         </section>
     </main>    
     <!-- Footer -->
-    <footer class="footer">
-        <span><small>&copy; Anand Seshadri | G01351350 | 2023 </small> </span>
-      </footer>
+    <footer>
+      <small>&copy; Anand Seshadri | G01351350 | 2023</small>
+    </footer>
 </body>
 </html>

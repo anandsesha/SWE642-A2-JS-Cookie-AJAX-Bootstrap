@@ -137,7 +137,6 @@ table {
   border-spacing: 0;
 }
 
-
 /* CUSTOM DESIGN*/
 *,
 *::before,
@@ -151,6 +150,13 @@ table {
   --tertiary: #ffcc33;
   --background: #82828184;
 }
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 body {
   line-height: 2;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -159,29 +165,23 @@ body {
   height: 100%;
   background-color: var(--background);
 }
+
 header {
   background-image: linear-gradient(to right, var(--primary), var(--tertiary));
   position: sticky;
   font-family: 'Times New Roman', Times, serif;
   top: 0;
 }
-h1 {
-  color: var(--basic);
-  font-size: 32px;
-  font-weight: 600;
-  margin: 10px 20px;
-  padding: 5px;
-  border: solid 2px var(--tertiary);
-  border-radius: 20px;
+
+.navbar {
+  background-color: #006400;
+  background-image: linear-gradient(to right, rgb(3, 50, 3), rgb(47, 167, 47));
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-top: 0;
+  margin-bottom: 0;
 }
-h2 {
-  font-size: 24px;
-  color: var(--primary);
-  text-align: center;
-  width: 100%;
-  border: solid var(--primary) 5px;
-  text-shadow: 1px 1px var(--secondary);
-}
+
 .nav-bar a {
   text-decoration: none;
   padding: 10px 20px;
@@ -195,6 +195,31 @@ h2 {
   text-decoration: none;
   padding: 5px 20px;
   color: var(--secondary);
+}
+
+.navbar-brand img{
+  padding: 5px;
+  object-fit: cover;
+  filter: invert(100%);
+}
+
+
+.navbar .container-fluid{
+  height: 53.6px;
+}
+
+.navbar-nav li {
+  margin: 0 10px;
+}
+
+/* Survey form main section */
+h2 {
+  font-size: 24px;
+  color: var(--primary);
+  text-align: center;
+  width: 100%;
+  border: solid var(--primary) 5px;
+  text-shadow: 1px 1px var(--secondary);
 }
 
 .form-control {
@@ -222,11 +247,7 @@ h2 {
   color: red;
   /* float: right; */
 }
-.flex {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+
 form {
   border: 2px solid var(--basic);
   padding: 20px;
@@ -264,6 +285,8 @@ button:hover {
 .star{
     color: red;
 }
+
+/* Common footer */
 footer {
   height: 2rem;
   position: fixed;
