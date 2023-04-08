@@ -286,6 +286,36 @@ button:hover {
     color: red;
 }
 
+/* Data field added */
+.data-group {
+	margin-bottom: 10px;
+}
+.data-label{
+  display: block;
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+#data {
+	height: 80px;
+  width: 100%;
+}
+
+#average, #maximum {
+	font-weight: bold;
+  width: 100%;
+}
+
+#error {
+	color: red;
+	font-weight: bold;
+	margin-top: 5px;
+  width: 100%;
+}
+#error-output {
+  color: red;
+}
+
 /* Common footer */
 footer {
   height: 2rem;
@@ -296,4 +326,17 @@ footer {
   font-family: 'Times New Roman', Times, serif;
   color: var(--basic);
   text-align: center;
+}
+
+dialog{
+  width: 50em;
+  height:fit-content;
+  padding: 10px;
+}
+
+.survey-form a{
+  background-color: var(--basic);
+  padding: 8px;
+  border-radius: 10px;
+  border: 2px solid var(--primary);
 }
