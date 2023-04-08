@@ -2,7 +2,16 @@
 In HW Assignment 2, Enhancing Assignment 1, we have added:
 1. Navigation bar
 2. Cookie and Greetings implementation
-3. Survey form validation (using event handling) and new 'data' field added. (uses AJAX and JSON) 
+3. Survey form validation (using event handling) 
+4. Added new 'data' field added.
+5. Use Ajax and JSON to implement a portion of the Student Survey Form to provide a better user experience in filling out the survey form. 
+
+Please check out my HW-assignment-2 below hosted on AWS S3 bucket:
+
+http://swe-642-assignment-2.s3-website.us-east-2.amazonaws.com
+
+
+
 
 
 ------------------------------------------------------------------------------------
@@ -20,7 +29,7 @@ Facility given to navigate from any of the 3 pages to the others.
 
 
 
-Please check out my assignment below hosted on AWS S3 bucket: 
+Please check out my HW-assignment-1 below hosted on AWS S3 bucket: 
 
 http://anand-swe-642-assignment-1.s3-website-us-east-1.amazonaws.com/
 

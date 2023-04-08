@@ -1,3 +1,7 @@
+ //Created by: Anand Seshadri
+//GMU ID: G01351350 
+
+
 // Below function will load the content of each page into the main section of the current page when the link is clicked.
 function loadPage(page) {
     var xhttp = new XMLHttpRequest();
