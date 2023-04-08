@@ -336,7 +336,16 @@ dialog{
 
 .survey-form a{
   background-color: var(--basic);
-  padding: 8px;
-  border-radius: 10px;
+  padding: 2px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem;
   border: 2px solid var(--primary);
+}
+.survey-form a:hover{
+  text-decoration: none;
+  color: var(--basic);
+  background-color: var(--primary);
 }
